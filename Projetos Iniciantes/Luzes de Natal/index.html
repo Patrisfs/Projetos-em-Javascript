@@ -18,30 +18,25 @@
         <div id="luz" class="roxo"></div>
     </div>
     <div id="menu">
-        <button  id="botao" class="play">Iniciar</button>
-        <button  id="botao" class="stop">Parar</button>
-         Speed: <input id="input" type="number" placeholder="Tempo de 1 a 5" maxlength="1" onclick="run()"><button id="botao" class="botaoR">Run</button>
+        <button  class="botao" id="play" onclick="iniciar()">Iniciar</button>
+        <button  class="botao" id="stop" onclick="parar()">Parar</button>
+         Speed: <input id="input" type="number" placeholder="Tempo de 1 a 5" maxlength="1" onclick="run()"><button id="botaoR" class="botao">Run</button>
     </div>
 </body>
 <script>
-    var play = document.getElementsByClassName('play');
-    var stop = document.getElementsByClassName('stop');
+    var play = document.getElementById('play');
+    var stop = document.getElementById('stop');
     var luz = document.getElementById('luz');
     var len = luz.length;
- 
-    const on = function() {
-        for (var i = 0; i < len; i++) {
-            luz[i].removeAttribute("style");
-            luz[i].style.animationPlayState = "running";
-            luz[i].style.WebkitAnimationPlayState = "running";
-        }
+
+    function iniciar(){
+        element.style.animationPlayState = running;
+
     }
 
-    const off = function() {
-        for (var i = 0; i < len; i++) {
-            luz[i].style.animation = "none";
-        }
+    function parar(){
+        element.style.animationPlayState = 'paused';
+        
     }
-
 </script>
 </html>
