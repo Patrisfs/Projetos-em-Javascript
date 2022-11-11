@@ -7,7 +7,7 @@ body{
     overflow: hidden;
 }
 #container{
-    position: absolute;
+    position: relative;
     text-align: center;
     margin-left: 10%;
     margin-top: 2%;
@@ -17,32 +17,112 @@ body{
     width: 100px;
     height: 100px;
     border-radius: 100px;
+    margin-left: 1%;
 }
-.red{
+.vermelho{
     background-color: rgb(255, 0, 0);
+    animation-duration: 1s;
+    animation-name: pisca-vermelho;
+    animation-iteration-count: infinite;
+}
+@keyframes pisca-vermelho {
+    100% {
+    box-shadow: 1px 1px 0px rgb(255, 0, 0);
+    }
+    0% {
+    box-shadow: 0px 0px 20px 11px rgb(194, 1, 1);
+    }
 }
 .laranja{
     background-color: rgb(255, 145, 0);
+    animation-duration: 1s;
+    animation-name: pisca-laranja;
+    animation-iteration-count: infinite;
+}
+@keyframes pisca-laranja {
+    100% {
+    box-shadow: 1px 1px 0px rgb(255, 145, 0);
+    }
+    0% {
+    box-shadow: 0px 0px 20px 11px rgb(207, 118, 1);
+    }
 }
 .amarelo{
     background-color: rgb(251, 255, 0);
+    animation-duration: 1s;
+    animation-name: pisca-amarelo;
+    animation-iteration-count: infinite;
+}
+@keyframes pisca-amarelo{
+    100% {
+    box-shadow: 1px 1px 0px rgb(251, 255, 0);
+    }
+    0% {
+    box-shadow: 0px 0px 20px 11px rgb(217, 221, 0);
+    }
 }
 .verde{
     background-color: rgb(30, 255, 0);
+    animation-duration: 1s;
+    animation-name: pisca-verde;
+    animation-iteration-count: infinite;
+}
+@keyframes pisca-verde{
+    100% {
+    box-shadow: 1px 1px 0px rgb(30, 255, 0);
+    }
+    0% {
+    box-shadow: 0px 0px 20px 11px rgb(25, 209, 1);
+    }
 }
 .ciano{
     background-color: rgb(0, 238, 255);
+    animation-duration: 1s;
+    animation-name: pisca-ciano;
+    animation-iteration-count: infinite;
+}
+@keyframes pisca-ciano{
+    100% {
+    box-shadow: 1px 1px 0px rgb(0, 238, 255);
+    }
+    0% {
+    box-shadow: 0px 0px 20px 11px rgb(0, 187, 201);
+    }
 }
 .azul{
-    background-color: rgb(0, 47, 255);
+        background-color: rgb(0, 47, 255);
+        animation-duration: 1s;
+        animation-name: pisca-azul;
+        animation-iteration-count: infinite;
+    }
+@keyframes pisca-azul {
+    100% {
+    box-shadow: 1px 1px 0px rgb(0, 47, 255);
+    }
+    0% {
+    box-shadow: 0px 0px 20px 11px rgb(1, 39, 207);
+    }
 }
-.roxo{
-    background-color: rgb(174, 0, 255);
+
+.roxo {
+        background-color:rgb(174, 0, 255);
+        animation-duration: 1s;
+        animation-name: pisca-roxo;
+        animation-iteration-count: infinite;
+    }
+@keyframes pisca-roxo {
+    100% {
+    box-shadow: 1px 1px 0px rgb(174, 0, 255);
+    }
+    0% {
+        box-shadow: 0px 0px 20px 11px rgb(127, 0, 185);
+    }
 }
+
 #menu{
-    position: absolute;
-    top: 30%;
+    position: relative;
     left: 30%;
+    margin-top: 100px;
 }
 #botao{
     background-color: black;

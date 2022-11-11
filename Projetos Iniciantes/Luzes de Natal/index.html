@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="container">
-        <div id="luz" class="red"></div>
+        <div id="luz" class="vermelho"></div>
         <div id="luz" class="laranja"></div>
         <div id="luz" class="amarelo"></div>
         <div id="luz" class="verde"></div>
@@ -18,12 +18,30 @@
         <div id="luz" class="roxo"></div>
     </div>
     <div id="menu">
-        <button id="botao" class="botaoI" onclick="iniciar()">Iniciar</button>
-        <button id="botao" class="botaoP" onclick="parar()">Parar</button>
+        <button  id="botao" class="play">Iniciar</button>
+        <button  id="botao" class="stop">Parar</button>
          Speed: <input id="input" type="number" placeholder="Tempo de 1 a 5" maxlength="1" onclick="run()"><button id="botao" class="botaoR">Run</button>
     </div>
 </body>
 <script>
+    var play = document.getElementsByClassName('play');
+    var stop = document.getElementsByClassName('stop');
+    var luz = document.getElementById('luz');
+    var len = luz.length;
+ 
+    const on = function() {
+        for (var i = 0; i < len; i++) {
+            luz[i].removeAttribute("style");
+            luz[i].style.animationPlayState = "running";
+            luz[i].style.WebkitAnimationPlayState = "running";
+        }
+    }
+
+    const off = function() {
+        for (var i = 0; i < len; i++) {
+            luz[i].style.animation = "none";
+        }
+    }
 
 </script>
 </html>
