@@ -4,7 +4,7 @@ Repositório com Projetos em Javascript:
 </div>
 <div>
 
-| Iniciante | Intermediário | Diificil |
+| Iniciante | Intermediário | Difícil |
 | --------------------------------------------------------------------------------- | ---------------------------------------------------------- | ---------- |
 |   |   |  |
 </div>
