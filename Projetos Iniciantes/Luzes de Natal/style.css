@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-* {
-    box-sizing: border-box;
-  }
-  
   body {
     background: rgb(25, 21, 26);
     display: flex;
@@ -117,8 +113,6 @@
     background-color: #2ecc71;
     animation: glow-4 1s infinite;
   }
-  
-  
   
   @keyframes glow-1 {
     0%,
