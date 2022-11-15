@@ -159,18 +159,3 @@
       box-shadow: 0 0 20px 5px #2ecc71;
     }
   }
-  
-  @-webkit-keyframes main-glow {
-    0%, 100% {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #c0392b, 0 0 60px #c0392b, 0 0 70px #c0392b;
-    }
-    25% {
-      text-shadow: 0 0 20px #fff, 0 0 30px #f1c40f, 0 0 40px #ff4da6, 0 0 50px #f1c40f, 0 0 60px #f1c40f, 0 0 70px #f1c40f, 0 0 80px #ff4da6;
-    }
-    50% {
-      text-shadow: 0 0 20px #fff, 0 0 30px #74f7e1, 0 0 40px #74f7e1, 0 0 50px #74f7e1, 0 0 60px #74f7e1, 0 0 70px #74f7e1, 0 0 80px #74f7e1;
-    }
-    75% {
-      text-shadow: 0 0 20px #fff, 0 0 30px #2ecc71, 0 0 40px #2ecc71, 0 0 50px #2ecc71, 0 0 60px #2ecc71, 0 0 70px #2ecc71, 0 0 80px #2ecc71;
-    }
-  }

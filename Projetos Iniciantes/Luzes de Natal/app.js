@@ -5,20 +5,15 @@ const btn = document.getElementById('submit')
 const title = document.getElementById('title')
 var len = circle.length;
 
-const on = function() {
+function on(){
   for (var i = 0; i < len; i++) {
     circle[i].removeAttribute("style");
-    circle[i].style.animationPlayState = "running";
-    circle[i].style.WebkitAnimationPlayState = "running";
   }
 }
 
-const off = function() {
-  title.style.animation = "none";
-
+function off() {
   for (var i = 0; i < len; i++) {
-    circle[i].style.animation = "none";
-    circle[i].style.background = "#563260";
+    circle[i].style.animation = "none"
   }
 }
 
