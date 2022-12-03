@@ -18,20 +18,27 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-h1{
-    color: white;
-}
-#calculadora{
+#calc{
     background-color: var(--corfundocal);
 }
-.input{
+#operations{
+    text-align: right;
     background-color: var(--cor1);
     color: white;
-    width:208px;
-    height: 30px;
-    border: none;
+    padding: 1em;
+    max-width:200px;
     margin-bottom: 1px;
-    text-align: right;
+}
+#previous-operation{
+    overflow-wrap: break-word;
+}
+#current-operation{
+    overflow-wrap: break-word;
+}
+#buttons-container{
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 button{
     background-color: var(--cor1);
@@ -39,12 +46,7 @@ button{
     border: none;
     height: 40px;
     cursor: pointer;
-}
-#buttons-container{
-    width: 200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 3px;
+    margin: 1px 1px 1px 2px;
 }
 #buttons-container button:hover{
     background-color: var(--corfundocal);
