@@ -7,9 +7,12 @@ class calculator{
         this.currentOperationText = currentOperationText;
         this.previousOperationText = previousOperationText;
         this.currentOperation = "";
-
     }
-
+    
+    // change values of the calculcator screen
+    updateScreen(){
+        this.currentOperationText.innerText += this.currentOperation;
+    }
     //add digit to calculator screen
     addDigit(digit){
         //check if current operation already has a dot
@@ -24,21 +27,26 @@ class calculator{
 
         //get currente and previous value
         let operationValue;
-        let previous =+this.previousOperationText.innerText;
-        let current=+this.currentOperationText.innerText;
+        const previous =+this.previousOperationText.innerText;
+        const current=+this.currentOperationText.innerText;
 
         switch(operation){
             case"+":
+            operationValue = previous + current;
+            this.updateScreen(operationValue,operation,current,previous);
+
                 break;
             default:
                 return;
         }
     }
-
-    // change values of the calculcator screen
-    updateScreen(){
-        this.currentOperationText.innerText += this.currentOperation;
-    }
+    //changes values of the calculator screen
+    updateScreen(
+        operationValue = null, 
+        operation = null,
+        current = null,
+        previous = null,
+        )
 }
 
 const calc = new calculator(previousOperationText, currentOperationText);
