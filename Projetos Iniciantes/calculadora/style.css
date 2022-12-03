@@ -36,17 +36,3 @@ h1{
     margin-bottom: 1px;
     text-align: right;
 }
-
-button{
-    background-color: var(--cor1);
-    color: white;
-    border: none;
-    width: 50px;
-    height:50px;
-}
-:hover > button{
-    background-color: var(--corfundocal);
-}
-#igual{
-    background-color:  rgb(47, 47, 53);
-}
