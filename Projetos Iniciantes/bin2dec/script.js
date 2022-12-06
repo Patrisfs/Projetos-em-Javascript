@@ -1,2 +1,3 @@
-var input = document.getElementById(entrada);
-console.log(typeof(entrada));
+var n1 = document.getElementById(`entrada`);
+var  value = n1.value;
+console.log(value);
