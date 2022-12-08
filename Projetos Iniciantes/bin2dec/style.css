@@ -16,6 +16,15 @@ body{
     text-align: center;
     color: var(--cor1);
 }
+h2{
+    font-size: small;
+}
+#input1{
+    margin-top: -10px;
+}
+#input2{
+    margin-top: -10px;
+}
 .input{
     text-align: right;
 }
