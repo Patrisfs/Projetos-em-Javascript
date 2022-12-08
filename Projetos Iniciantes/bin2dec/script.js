@@ -1,8 +1,7 @@
-var screen = document.querySelector(`#inserir`);
-var resul = document.querySelector(`#resultado`);
-var btn = document.querySelector(`#btn`);
+var btn = document.querySelector("#converter");
+var bin = document.querySelector("#inserir");
 
 btn.addEventListener("click", function(){
-    var bin = screen;
-    console.log(bin.value);
+    var bin1 = bin.value;
+    
 });

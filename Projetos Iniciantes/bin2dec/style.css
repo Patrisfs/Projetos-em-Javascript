@@ -11,38 +11,45 @@ body{
 }
 #corpo{
     text-align: left;
-    margin: 0% 300px;
+    margin: 0% 158px;
 }
 #title{
     text-align: center;
+    font-size: 250%;
     color: var(--cor1);
 }
 h2{
-    font-size: small;
-}
-#input2{
-    margin-top: -10px;
+    font-size:112%;
 }
 .input{
-    width: 300px;
+    margin-top: -10px;
+    font-size: large;
+    width: 400px;
+    height: 35px;
     text-align: right;
+    color: white;
+    background-color: var(--corfundocal);
+}
+#input1{
+    margin-top: -10px;
 }
 .btn{
+    width: 80px;
+    height: 43px;
     background-color: rgb(0, 0, 0);
     color: white;
     cursor: pointer;
 }
 :hover > .btn{
     border-color: rgb(29, 29, 29);
-}
-#inserir{
-    color: white;
-    background-color: var(--corfundocal);
-}
-#resultado{
-    color: white;
-    background-color: var(--corfundocal);
+    border-width: 3px;
 }
 #part1{
+    align-items: center;
     margin-top: 5%;
+}
+a{
+    color: var(--cor1);
+    text-decoration-line: none;
+    font-size: 140%;
 }
