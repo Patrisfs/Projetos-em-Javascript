@@ -1,0 +1,32 @@
+@charset "UTF-8";
+:root{
+    --corfundocal: black;
+    --cor1: rgb(17, 158, 17);
+    --cor2: ;
+    --cor3: ;  
+}
+body{
+    background-color: var(--corfundocal);
+    color: white;
+}
+#corpo{
+    text-align: left;
+}
+#title{
+    text-align: center;
+    color: var(--cor1);
+}
+.input{
+    text-align: right;
+}
+#inserir{
+    color: white;
+    background-color: var(--corfundocal);
+}
+#resultado{
+    color: white;
+    background-color: var(--corfundocal);
+}
+#part1{
+    margin-top: 5%;
+}
