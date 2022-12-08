@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root{
-    --corfundocal: black;
+    --corfundocal: rgb(22, 22, 22);
     --cor1: rgb(17, 158, 17);
     --cor2: ;
     --cor3: ;  
@@ -11,6 +11,7 @@ body{
 }
 #corpo{
     text-align: left;
+    margin: 0% 300px;
 }
 #title{
     text-align: center;
@@ -19,14 +20,20 @@ body{
 h2{
     font-size: small;
 }
-#input1{
-    margin-top: -10px;
-}
 #input2{
     margin-top: -10px;
 }
 .input{
+    width: 300px;
     text-align: right;
+}
+.btn{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+:hover > .btn{
+    border-color: rgb(29, 29, 29);
 }
 #inserir{
     color: white;
