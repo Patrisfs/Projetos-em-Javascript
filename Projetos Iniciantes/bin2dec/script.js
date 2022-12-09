@@ -7,7 +7,7 @@ function converte(){
     var dec = parseInt(bin1, 2);
     return dec;
 };
-btn.addEventListener("click", function(){
+btn.addEventListener("click", function(e){
     var dec =converte(); 
     resul.value = dec
 });
