@@ -1,1 +1,1 @@
-#Converosr de Binário para Decimal e decimal para Binário
+# Conversor de binário para decimal e decimal para binário
